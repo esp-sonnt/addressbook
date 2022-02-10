@@ -13,7 +13,7 @@ blocks:
         - name: env-production
       env_vars:
         - name: CLUSTER_NAME
-          value: addressbook-server
+          value: 81248e31-ae10-4f3b-89e7-bf3e40d97a4b
       prologue:
         commands:
           - wget https://github.com/digitalocean/doctl/releases/download/v1.20.0/doctl-1.20.0-linux-amd64.tar.gz
