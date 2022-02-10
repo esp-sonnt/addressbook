@@ -9,7 +9,6 @@ blocks:
     task:
       secrets:
         - name: dockerhub
-    task:
       prologue:
         commands:
           - checkout
