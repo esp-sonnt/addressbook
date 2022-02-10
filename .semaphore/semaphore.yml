@@ -17,3 +17,8 @@ blocks:
             - cache restore
             - npm install
             - cache store
+promotions:
+  - name: Dockerize
+    pipeline_file: docker-build.yml
+    auto_promote_on:
+      - result: passed
