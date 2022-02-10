@@ -1,0 +1,19 @@
+version: v1.0
+name: Addressbook
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Install dependencies
+    task:
+      prologue:
+        commands:
+          - checkout
+          - nvm use
+      jobs:
+        - name: npm install and cache
+          commands:
+            - cache restore
+            - npm install
+            - cache store
